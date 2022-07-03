@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInsertDataActivity">
+
+    <TextView
+        android:id="@+id/addNewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Your New Data"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="381dp">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/input_bg"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <Button
+        android:id="@+id/btnDiscard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/input_bg"
+        android:text="DISCARD"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirm"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewData">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inputDate"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dateInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="DD "
+                android:inputType="date"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                app:layout_constraintEnd_toStartOf="@+id/monthInput"
+                tools:layout_editor_absoluteY="174dp" />
+
+            <EditText
+                android:id="@+id/monthInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="MM "
+                android:inputType="date"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                app:layout_constraintEnd_toStartOf="@+id/yearInput"
+                tools:layout_editor_absoluteY="173dp" />
+
+            <EditText
+                android:id="@+id/yearInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="YYYY "
+                android:inputType="date"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                tools:layout_editor_absoluteX="280dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inputTime"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hourInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="hh "
+                android:inputType="time"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                app:layout_constraintEnd_toStartOf="@+id/monthInput"
+                tools:layout_editor_absoluteY="174dp" />
+
+            <EditText
+                android:id="@+id/minInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="mm "
+                android:inputType="time"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                app:layout_constraintEnd_toStartOf="@+id/yearInput"
+                tools:layout_editor_absoluteY="173dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/systolicInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Systolic"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputSystolicData"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Pressure in mm Hg"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/diastolicInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Diastolic"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputDiastolicData"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Pressure in mm Hg"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/commentInput"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Comment"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputCommentData"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Not more than 20 character"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral50"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
