@@ -15,15 +15,30 @@
         tools:targetApi="31">
         <activity
             android:name=".editData"
-            android:exported="false" />
-        <activity
+
             android:name=".ShowData"
             android:exported="false" />
+
+            android:exported="false"
+            android:parentActivityName=".ShowData" />
+
         <activity
             android:name=".Adding_data"
             android:exported="false"
             android:label="Add Data"
             android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="35 and 37">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
