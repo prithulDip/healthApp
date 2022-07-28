@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/DEMO/app/src/main/res/layout/activity_adding_data.xml" value="0.1" />
         <entry key="..\:/DEMO/app/src/main/res/layout/activity_edit_data.xml" value="0.22" />
         <entry key="..\:/DEMO/app/src/main/res/layout/activity_main.xml" value="0.14407866609662248" />
@@ -19,6 +20,9 @@
     </option>
   </component>
   <component name="JavadocGenerationManager">
+
+  
+
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$" />
     <option name="OPTION_SCOPE" value="public" />
     <option name="OPTION_INCLUDE_LIBS" value="true" />
